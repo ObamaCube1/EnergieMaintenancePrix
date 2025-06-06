@@ -3,6 +3,11 @@
 
 Projet de stage de fin de L3 - Traitement de prix négatifs de la bourse de l'électricité
 
+## Installation
+
+- serveur_flask: Installer Snap7 et installer les librairies utilisées si nécessaire (python-snap7, flask et waitress)
+- serveur_php: Aucune démarche à faire
+- page
 
 ## Cahier des charges
 
