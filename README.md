@@ -1,4 +1,9 @@
 
+# EnergieMaintenancePrix
+
+Projet de stage de fin de L3 - Traitement de prix négatifs de la bourse de l'électricité
+
+
 ## Cahier des charges
 
 Ce qu'il reste à faire:
