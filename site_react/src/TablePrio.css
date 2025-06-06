@@ -1,0 +1,33 @@
+thead {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+tr {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+th {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 2px 10px;
+    background-color: #3fa65e;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px black;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+td:nth-child(2n+1) {
+    background-color: rgba(123, 237, 153, 0.3);
+}
+
+tbody {
+    background-color: rgb(224, 245, 220);
+}
+
+.ligne-meilleure {
+    background-color: yellow;
+}
+

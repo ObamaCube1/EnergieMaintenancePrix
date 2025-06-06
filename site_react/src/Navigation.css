@@ -1,0 +1,36 @@
+.services-bar {
+    width: 100%;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    grid-template-columns: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #3fa65e;
+}
+
+.service-bar-item {
+    background-color: #3fa65e;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 3px 6px -1px,
+    rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+}
+
+.service-bar-item:hover {
+    font-weight: 700;
+    padding: 2px;
+    background-color: rgba(101, 224, 70);
+}
+
+.selected-service {
+    background-color: rgb(92, 244, 54);
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0 3px 7px -3px;
+    padding: 2px;
+}
