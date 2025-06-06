@@ -5,9 +5,30 @@ Projet de stage de fin de L3 - Traitement de prix négatifs de la bourse de l'é
 
 ## Installation
 
-- serveur_flask: Installer Snap7 et installer les librairies utilisées si nécessaire (python-snap7, flask et waitress)
-- serveur_php: Aucune démarche à faire
-- page
+- serveur_flask: Installer Python, Snap7 et installer les librairies utilisées si nécessaire (python-snap7, flask et waitress), lancer soit en invite de commande soit via VSCode/PyCharm.
+- serveur_php: lancer en mettant les dossiers sur XAMPP ou n'importe quel serveur Apache. 
+- site_react: lancer via VSCode/WebStorm. Pour déployer sur IIS, supprimer le fichier .htaccess et créer à la place un fichier web.config:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+    <rewrite>
+      <rules>
+        <!-- Rediriger toutes les routes non-fichiers/non-dossiers vers index.html -->
+        <rule name="React Routes" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <!-- Attention : pas de / devant index.html -->
+          <action type="Rewrite" url="index.html" />
+        </rule>
+      </rules>
+    </rewrite>
+  </system.webServer>
+</configuration>
+```
 
 ## Cahier des charges
 
