@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 /// Récupération des prix horaires ///
 //////////////////////////////////////
 
-$credentials =
+$credentials = "NDc4ZDFlYWQtYzZjNS00MDBlLTliMjUtYTAxMmM0YTk4NTE4OjY2YjVjODk4LTQzNWYtNDFkYy1hMDkzLWM5MDVhZWUyNzcyMA==";
 
 function getAccessToken(String $credentials) {
     $url = 'https://digital.iservices.rte-france.com/token/oauth/';
@@ -573,3 +573,4 @@ switch ($action) {
 
 echo json_encode($result);
 ?>
+
