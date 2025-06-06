@@ -57,3 +57,6 @@ def flip():
     return 0;
 ```
 
+## Solution de secours
+
+En cas d'échec critique, j'ai une archive de mon progrès sur [google drive]()
